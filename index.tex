@@ -1,0 +1,60 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[brazil]{babel}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[numbers]{natbib}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+\title{Título do Trabalho}
+\author{\IEEEauthorblockN{Nome Completo do Autor}
+    \IEEEauthorblockA{\textit{Universidade Estadual de Feira de Santana}\\Feira de Santana, Brasil\\email@uefs.br}
+    \and
+    \IEEEauthorblockN{Nome Completo do Orientador}
+    \IEEEauthorblockA{\textit{Universidade Estadual de Feira de Santana}\\Feira de Santana, Brasil\\email@uefs.br}
+}
+
+\maketitle
+
+\begin{abstract}
+\input{contents/resumo.tex}
+\end{abstract}
+
+\renewcommand\IEEEkeywordsname{Palavras-chave}
+\begin{IEEEkeywords}
+\input{contents/palavras_chave.tex}
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introdução}
+\input{contents/introducao.tex}
+
+\section{Fundamentação Teórica}
+\input{contents/fundamentacao.tex}
+
+\section{Metodologia}
+\input{contents/metodologia.tex}
+
+\section{Resultados}
+\input{contents/resultados.tex}
+
+\section{Conclusão}
+\input{contents/conclusao.tex}
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv.bib,contents/referencias.bib}
+
+\end{document}
