@@ -1,0 +1,49 @@
+Descreva os conceitos centrais do seu TCC, a partir de livros, artigos e periódicos. É recomendável que se faça um levantamento de trabalhos relacionados ao seu, destacando as principais contribuições.
+
+Respeitar a autoria, nas citações diretas e indiretas. Evitar parágrafos muito longos. Evitar seções e subseções muito curtas. Você pode referenciar figuras com Figura \ref{fig:figura}, equações com Equação \ref{eq:equacao} e/ou tabelas com Tabela \ref{tabela}
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics{images/figure.png}}
+    \caption{Exemplo de uma figura com legenda. Fonte: Adaptada de \cite{gonzales2009}}
+    \label{fig:figura}
+\end{figure}
+
+\begin{figure*}[htbp]
+    \centering
+    \begin{subfigure}[]{0.329\textwidth}
+        \centerline{ \includegraphics[width=0.8\textwidth]{images/figure_a.png} }
+        \caption{Figura A}
+        \label{fig:figura_2a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[]{0.329\textwidth}
+        \centerline{ \includegraphics[width=0.8\textwidth]{images/figure_b.png} }
+        \caption{Figura B}
+        \label{fig:figura_2b}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[]{0.329\textwidth}
+        \centerline{ \includegraphics[width=0.8\textwidth]{images/figure_c.png} }
+        \caption{Figura C}
+        \label{fig:figura_2c}
+    \end{subfigure}
+    \caption{Exemplo de uma figura com subfiguras e ocupando as duas colunas do documento}
+    \label{fig:figura_ocupando_duas_colunas}
+\end{figure*}
+
+\begin{align} \label{eq:equacao}
+    acur\acute{a}cia = \frac{VP + VN}{total}
+\end{align}
+
+\begin{table}[htbp]
+    \begin{center}
+        \renewcommand{\arraystretch}{1.4}
+        \caption{Exemplo de tabela com legenda. Fonte: Próprio Autor.}
+        \begin{tabular}{*{4}{c}}%
+            \hline
+            Acurácia(\%)   & Precisão(\%) & Revocação(\%)    & \textit{F\textsubscript{1}-Score}(\%) \\ \hline
+            94,64           & 96,79         & 89,98             & 93,26         \\
+            \label{tab:tabela}
+        \end{tabular}
+    \end{center}
+\end{table}
